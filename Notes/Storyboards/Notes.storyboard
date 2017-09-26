@@ -12,9 +12,6 @@
         <array key="Futura.ttc">
             <string>Futura-Medium</string>
         </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Notes View Controller-->
@@ -33,12 +30,12 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLZ-fc-4v2">
-                                        <rect key="frame" x="20" y="292.5" width="335" height="18"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <rect key="frame" x="20" y="292" width="335" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nDD-5g-71p">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="nDD-5g-71p">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <color key="backgroundColor" red="0.55463141199999999" green="0.89392024280000004" blue="0.2365127504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="separatorColor" red="0.55463141199999999" green="0.89392024280000004" blue="0.2365127504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,9 +49,9 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wen-mP-0pg">
-                                                            <rect key="frame" x="8" y="8" width="319.5" height="18"/>
+                                                            <rect key="frame" x="8" y="8" width="320" height="24"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="18" id="Np7-fa-dkr"/>
+                                                                <constraint firstAttribute="height" constant="24" id="Np7-fa-dkr"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                             <nil key="textColor"/>
@@ -78,7 +75,7 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="zEk-E7-Gdy" firstAttribute="leading" secondItem="3p6-4B-2wS" secondAttribute="leading" constant="8" id="4n2-A9-ow7"/>
-                                                        <constraint firstItem="zEk-E7-Gdy" firstAttribute="top" secondItem="Wen-mP-0pg" secondAttribute="bottom" constant="8" id="5XJ-70-B8g"/>
+                                                        <constraint firstItem="zEk-E7-Gdy" firstAttribute="top" secondItem="Wen-mP-0pg" secondAttribute="bottom" constant="2" id="5XJ-70-B8g"/>
                                                         <constraint firstAttribute="bottom" secondItem="zEk-E7-Gdy" secondAttribute="bottom" constant="8" id="LE8-l6-MDp"/>
                                                         <constraint firstAttribute="trailing" secondItem="zEk-E7-Gdy" secondAttribute="trailing" constant="8" id="RS2-FJ-tfB"/>
                                                         <constraint firstItem="Wen-mP-0pg" firstAttribute="leading" secondItem="3p6-4B-2wS" secondAttribute="leading" constant="8" id="bC2-L2-Fvp"/>
@@ -124,7 +121,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0ik-Dn-ung">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="a7W-oN-IPB">
+                        <barButtonItem key="rightBarButtonItem" title="➕" id="a7W-oN-IPB">
                             <connections>
                                 <segue destination="GTv-Fm-IRg" kind="show" identifier="SegueAddNoteViewController" id="Dog-4P-x6b"/>
                             </connections>
@@ -201,7 +198,7 @@
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="1UC-fj-lBC"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Ird-4y-81z">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ftf-S8-A1g">
+                        <barButtonItem key="rightBarButtonItem" title="✔️" id="ftf-S8-A1g">
                             <connections>
                                 <action selector="saveWithSender:" destination="GTv-Fm-IRg" id="UsC-Gc-XlB"/>
                             </connections>

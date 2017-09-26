@@ -104,7 +104,7 @@ class NotesViewController: UIViewController {
     // MARK: -
 
     private func setupMessageLabel() {
-        messageLabel.text = "You don't have any notes yet."
+        messageLabel.text = "У Вас нету заметок 🗒"
     }
 
     // MARK: -
